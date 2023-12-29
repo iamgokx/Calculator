@@ -15,8 +15,9 @@
   border: 0px solid rgba(255, 255, 255, 0.18);
   border-radius: 40px;
   z-index: 4;
-
-  
+  scale: 1;
+  min-width: 352px;
+ 
 }
 
 .calCont {
@@ -31,54 +32,81 @@
   flex-direction: column;
 }
 
-
-.hero{
+.hero {
   position: fixed;
   z-index: 4;
   top: 20%;
   left: 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   width: 300px;
 }
 
-.hero p{
+.hero p {
   font-size: 90px;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.hero a{
+.hero a {
   text-decoration: none;
   margin-bottom: 50px;
   font-size: 20px;
   text-indent: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.hero a:hover{
+.hero a:hover {
   color: rgb(0, 102, 255);
   letter-spacing: 2px;
   transition: 0.5s;
-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
-.hero a:active{
+.hero a:active {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
-  .hero{
-    top: 2%;
+
+
+
+
+@media screen and (max-width: 1535px) {
+
+  .hero p {
+    font-size: 50px;
+  }
+}
+
+
+@media screen and (max-width: 1040px) {
+  .hero {
+    top: 1%;
     left: 2%;
     width: 100%;
   }
 
-  .hero p{
+  .hero p {
     font-size: 40px;
   }
-  .hero a{
+  .hero a {
     font-size: 20px;
   }
 
-  
+  .calculator {
+    margin-bottom: 20px;
+  }
 }
+
+@media screen and (max-width: 545px) {
+  .calculator{
+    scale: 0.9;
+  }
+}
+
+
+@media screen and (max-height: 770px) and (max-width :760px ) {
+  .hero{
+    display: none;
+  }
+}
+

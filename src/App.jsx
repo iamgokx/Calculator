@@ -39,10 +39,12 @@ function App() {
   };
   return (
     <>
-    <div className={styles.hero}>
-      <p>React Calculator</p>
-      <a href="https://www.instagram.com/go.kullllll" target="_blank">©Gokul</a>
-    </div>
+      <div className={styles.hero}>
+        <p>React Calculator</p>
+        <a href="https://www.instagram.com/go.kullllll" target="_blank">
+          ©Gokul
+        </a>
+      </div>
       <div className={styles.calculator}>
         <div className={styles.calCont}>
           <Display displayValue={calVal}></Display>
@@ -52,7 +54,6 @@ function App() {
 
       <Blob />
       <Symbols></Symbols>
-    
     </>
   );
 }

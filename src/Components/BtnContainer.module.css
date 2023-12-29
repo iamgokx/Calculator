@@ -69,3 +69,22 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width: 385px) {
+  .btnContainer{
+   height: 100%;
+  }
+ .calBtn{
+  width: 4.0rem;
+  height: 4.0rem;
+ } 
+
+ .equalBtn {
+  height: 2.7em;
+}
+
+.btnc{
+  margin-left: 0;
+}
+ 
+}
