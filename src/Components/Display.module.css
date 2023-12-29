@@ -1,0 +1,19 @@
+.display {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  width: 95%;
+  height: 150px;
+  text-align: end;
+  margin: 10px auto;
+  border: none;
+  background-color: transparent;
+  margin-top: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: rgb(51, 31, 31);
+}
+
+.display:focus{
+  outline: none;
+  border: none;
+}

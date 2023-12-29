@@ -1,0 +1,25 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #85e5ee,
+    #aceaff,
+    #d2eeff,
+    #eff5ff,
+    #ffffff
+  );
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+
+  
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

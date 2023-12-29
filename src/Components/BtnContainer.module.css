@@ -1,0 +1,71 @@
+.btnContainer {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calBtn {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 5px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background-color: #155263b4;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 21px 29px 40px -23px rgba(0,0,0,1);
+  -moz-box-shadow: 21px 29px 40px -23px rgba(0,0,0,1);
+  box-shadow: 21px 29px 40px -23px rgba(0,0,0,1);
+}
+
+.calBtn:hover{
+  background-color: #2a6e81b4;
+  transition: 0.5s;
+}
+
+.equalBtn {
+  height: calc(4.5rem * 2 + 9px);
+  margin-bottom: -75px;
+  background-color: #ff9a3ccc; 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.equalBtn:hover {
+  background-color: rgba(250, 186, 127, 0.8); 
+  transition: 0.5s;
+}
+.org:hover {
+  background-color: rgba(250, 186, 127, 0.8); 
+  transition: 0.5s;
+}
+
+
+
+.btnc{
+  margin-left: -75px;
+}
+
+.backspace{
+  background-image: url(../assets/backspacelight.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.org{
+  background-color: #ff9a3ccc;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.blu{
+  background-color: rgba(153, 218, 243, 0.774);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
