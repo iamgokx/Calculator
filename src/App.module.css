@@ -65,3 +65,20 @@ animation-timing-function: ease-in-out;
 .hero a:active{
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .hero{
+    top: 2%;
+    left: 2%;
+    width: 100%;
+  }
+
+  .hero p{
+    font-size: 40px;
+  }
+  .hero a{
+    font-size: 20px;
+  }
+
+  
+}
