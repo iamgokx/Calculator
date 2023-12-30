@@ -1,7 +1,7 @@
-import styles from "./Blob.module.css"
-function Blob() {
+import styles from "./Blob.module.css";
+function Blob({themeflag}) {
   return (
-    <div className={styles.blob}></div>
-  )
+    <div className={`${themeflag === 0 ? styles.bloblight : styles.blobldark}`}></div>
+  );
 }
-export default Blob
+export default Blob;

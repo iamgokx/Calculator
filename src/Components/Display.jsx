@@ -1,9 +1,9 @@
 import styles from "./Display.module.css";
 
-function Display({ displayValue }) {
+function Display({ displayValue , themeflag}) {
   return (
     <input
-      className={styles.display}
+      className={`${themeflag === 0 ? styles.display : styles.displaydark}`}
       type="text"
       readOnly
       value={displayValue}></input>

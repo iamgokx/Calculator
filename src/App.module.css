@@ -1,4 +1,26 @@
-.calculator {
+.calculatordark {
+  width: 24rem;
+  height: 44rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(4, 1, 37, 0.452);
+  box-shadow: 0 8px 32px 0 rgb(0, 1, 20);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(140px);
+  border-radius: 10px;
+  border: 0.1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 40px;
+  z-index: 4;
+  scale: 1;
+  min-width: 352px;
+  transition: 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.calculatorlight {
   width: 24rem;
   height: 44rem;
 
@@ -9,7 +31,7 @@
 
   background: rgba(252, 244, 255, 0.452);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(11px);
   border-radius: 10px;
   border: 0px solid rgba(255, 255, 255, 0.18);
@@ -17,7 +39,8 @@
   z-index: 4;
   scale: 1;
   min-width: 352px;
- 
+  transition: 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .calCont {
@@ -30,6 +53,81 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+.calContdark {
+  width: 90%;
+  height: 95%;
+  border-radius: 40px;
+  border: 6px solid rgba(20, 70, 110, 0.226);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thmebtnlight {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.329);
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.459);
+  background-image: url(./assets/moon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1;
+  transition: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.themebtndark {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(37, 155, 179, 0.432);
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.459);
+  background-image: url(./assets/sun.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1;
+  transition: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.darkblob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  width: 5000px;
+  height: 5000px;
+  background-color: black;
+  z-index: 1;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transition: 0.7s;
+}
+
+.lightblob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  width: 0px;
+  height: 0px;
+  background-color: black;
+  z-index: 1;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transition: 0.7s;
 }
 
 .hero {
@@ -46,6 +144,11 @@
   font-size: 90px;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+.hero p:hover {
+  color: rgb(0, 153, 255);
 }
 
 .hero a {
@@ -54,9 +157,10 @@
   font-size: 20px;
   text-indent: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgb(0, 153, 255);
 }
 .hero a:hover {
-  color: rgb(0, 102, 255);
+  color: rgb(9, 93, 150);
   letter-spacing: 2px;
   transition: 0.5s;
   animation-timing-function: ease-in-out;
@@ -66,17 +170,11 @@
   color: white;
 }
 
-
-
-
-
 @media screen and (max-width: 1535px) {
-
   .hero p {
     font-size: 50px;
   }
 }
-
 
 @media screen and (max-width: 1040px) {
   .hero {
@@ -98,15 +196,13 @@
 }
 
 @media screen and (max-width: 545px) {
-  .calculator{
+  .calculator {
     scale: 0.9;
   }
 }
 
-
-@media screen and (max-height: 770px) and (max-width :760px ) {
-  .hero{
+@media screen and (max-height: 770px) and (max-width: 760px) {
+  .hero {
     display: none;
   }
 }
-

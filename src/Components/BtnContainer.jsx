@@ -1,6 +1,6 @@
 import styles from "./BtnContainer.module.css";
 
-function BtnContainer({ onButtonClick }) {
+function BtnContainer({ onButtonClick , themeflag}) {
   const buttonNames = [
     "%",
     "*",
@@ -27,11 +27,12 @@ function BtnContainer({ onButtonClick }) {
       {buttonNames.map((btn) => (
         <button
           key={btn}
-          className={`${styles.calBtn} ${btn === "=" ? styles.equalBtn : ""} ${
+          className={`${themeflag === 0 ? styles.calBtn :styles.calBtndark } ${btn === "=" ? styles.equalBtn : ""} ${
             btn === "C" ? styles.btnc : ""
           } ${btn == "" ? styles.backspace : ""}
           ${btn == "+" || btn === "-" || btn === "" ? styles.org : ""}
           ${btn == "%" || btn === "*" || btn === "/" ? styles.blu : ""}
+          ${btn == "*" ? styles.magnify : ""}
           `}
           onClick={() => onButtonClick(btn)}>
           {btn}

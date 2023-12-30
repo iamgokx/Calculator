@@ -12,7 +12,7 @@
   border: none;
   border-radius: 40px;
   color: white;
-  background-color: #155263b4;
+  background-color: #2a2438ad;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   font-size: 24px;
@@ -24,10 +24,34 @@
   box-shadow: 21px 29px 40px -23px rgba(0,0,0,1);
 }
 
-.calBtn:hover{
-  background-color: #2a6e81b4;
+.calBtndark:hover{
+  background-color: rgba(96, 165, 184, 0.151);
   transition: 0.5s;
 }
+.calBtn:hover{
+  background-color: #2a243880;
+  transition: 0.5s;
+}
+
+.calBtndark {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 5px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background-color: #322a42d5;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 46px 46px 69px -14px rgba(0,0,0,1);
+-moz-box-shadow: 46px 46px 69px -14px rgba(0,0,0,1);
+box-shadow: 46px 46px 69px -14px rgba(0,0,0,1);
+}
+
 
 .equalBtn {
   height: calc(4.5rem * 2 + 9px);
@@ -45,6 +69,10 @@
   transition: 0.5s;
 }
 
+.magnify{
+  font-size: 40px;
+  padding-top: 20px;
+}
 
 
 .btnc{
